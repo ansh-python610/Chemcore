@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 10 Chemistry Reaction Hub — Core Edition</title>
+<meta name="description" content="Detailed Class 10 Chemistry reaction web with equations, observations, colours, definitions, conditions, core notes and quiz.">
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#667085;--accent:#5b5ce2;--accent2:#8b5cf6;--border:#e6e8ef;--good:#0f9d68;--danger:#e04f5f;--shadow:0 12px 35px rgba(30,35,60,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+header{background:linear-gradient(135deg,#151a3a,#3533a8 55%,#7c3aed);color:white;padding:56px 20px 44px;position:relative;overflow:hidden}
+header:before{content:"⚗️";position:absolute;font-size:180px;right:5%;top:-50px;opacity:.08;transform:rotate(12deg)}
+.container{max-width:1180px;margin:auto;padding:0 20px}.hero{position:relative;z-index:1}
+.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);border-radius:999px;font-size:13px}
+h1{font-size:clamp(34px,6vw,62px);line-height:1.05;margin:18px 0 12px;letter-spacing:-2px}.hero p{max-width:700px;color:#e4e7ff;font-size:18px}
+.controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.search{flex:1;min-width:230px;padding:15px 17px;border:0;border-radius:14px;font-size:16px;outline:none;box-shadow:0 8px 25px rgba(0,0,0,.12)}
+button{border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer;transition:.2s}.btn-primary{background:white;color:#25256f}.btn-primary:hover{transform:translateY(-2px)}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.navin{display:flex;gap:8px;overflow:auto;padding:10px 20px}.navin button{background:transparent;color:var(--muted);white-space:nowrap}.navin button.active,.navin button:hover{background:#eeeefe;color:var(--accent)}
+section{padding:42px 0}.section-title{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:22px}.section-title h2{margin:0;font-size:30px}.section-title p{margin:0;color:var(--muted)}
+.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px}.chapter{background:var(--card);border:1px solid var(--border);padding:20px;border-radius:18px;box-shadow:var(--shadow);cursor:pointer}.chapter:hover{transform:translateY(-3px);transition:.2s}.chapter .icon{font-size:30px}.chapter h3{margin:9px 0 3px}.chapter p{margin:0;color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:21px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px}.top{display:flex;justify-content:space-between;gap:10px;align-items:start}.top h3{margin:0;font-size:19px}.tag{font-size:11px;font-weight:800;padding:5px 8px;border-radius:999px;background:#fff1bf;color:#805f00;white-space:nowrap}.equation{background:#101426;color:#f4f6ff;border-radius:13px;padding:16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15px;overflow:auto}.meta{display:grid;grid-template-columns:1fr 1fr;gap:9px}.meta div{background:#f7f8fc;border:1px solid var(--border);border-radius:11px;padding:10px}.meta b{display:block;font-size:11px;text-transform:uppercase;color:var(--muted);letter-spacing:.5px}.meta span{font-size:14px}.definition{border-left:4px solid var(--accent);padding-left:12px;color:#42495b;font-size:14px}
+.legend{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0 22px}.legend span{padding:7px 10px;border-radius:999px;font-size:12px;font-weight:700}.red{background:#ffe5e8;color:#a91e2b}.blue{background:#e2f0ff;color:#145ea8}.green{background:#def7ec;color:#08734a}.purple{background:#eee7ff;color:#6035a7}.orange{background:#fff0dd;color:#a95c00}
+.no-results{display:none;text-align:center;padding:35px;color:var(--muted)}
+.quiz-wrap{background:linear-gradient(135deg,#171a39,#3433a5);color:white;border-radius:24px;padding:28px;box-shadow:var(--shadow)}.question{font-size:21px;font-weight:800;margin:12px 0 20px}.options{display:grid;gap:10px}.options button{text-align:left;background:rgba(255,255,255,.1);color:white;border:1px solid rgba(255,255,255,.18)}.options button:hover{background:rgba(255,255,255,.18)}.options button.correct{background:#16845b}.options button.wrong{background:#b83c4b}.feedback{min-height:28px;margin-top:15px;font-weight:700}
+footer{padding:35px 20px;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:650px){header{padding-top:40px}h1{letter-spacing:-1px}.meta{grid-template-columns:1fr}.section-title{align-items:start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header id="home">
+<div class="container hero">
+<span class="badge">CBSE • CLASS 10 • CHEMISTRY</span>
+<h1>Reaction Hub 🧪</h1>
+<p>A detailed revision website for Class 10 Chemistry — equations, reaction types, conditions, observations, colours, definitions, extraction reactions and exam notes.</p>
+<div class="controls">
+<input id="search" class="search" type="search" placeholder="Search reaction, compound, colour, chapter...">
+<button class="btn-primary" onclick="document.getElementById('reactions').scrollIntoView()">Explore reactions ↓</button>
+</div>
+</div>
+</header>
+
+<nav><div class="container navin">
+<button class="active" data-filter="all">All</button>
+<button data-filter="chemical">Chemical Reactions</button>
+<button data-filter="acids">Acids, Bases & Salts</button>
+<button data-filter="metals">Metals & Non-metals</button>
+<button data-filter="carbon">Carbon Compounds</button>
+<button data-filter="quiz">Quiz</button>
+</div></nav>
+
+<main class="container">
+<section>
+<div class="section-title"><div><h2>Chapter map</h2><p>Choose a chapter to filter the reaction cards.</p></div></div>
+<div class="chapters">
+<div class="chapter" data-jump="chemical"><div class="icon">⚡</div><h3>Chemical Reactions</h3><p>Types, oxidation, reduction & redox</p></div>
+<div class="chapter" data-jump="acids"><div class="icon">🧪</div><h3>Acids, Bases & Salts</h3><p>Neutralisation, salts & gas evolution</p></div>
+<div class="chapter" data-jump="metals"><div class="icon">🔩</div><h3>Metals & Non-metals</h3><p>Reactivity, displacement & extraction</p></div>
+<div class="chapter" data-jump="carbon"><div class="icon">🧬</div><h3>Carbon Compounds</h3><p>Combustion, oxidation & esterification</p></div>
+</div>
+</section>
+
+<section id="reactions">
+<div class="section-title"><div><h2>Important reactions</h2><p id="count"></p></div></div>
+<div class="legend"><span class="red">🔴 Equation</span><span class="blue">🔵 Colour</span><span class="green">🟢 Observation</span><span class="purple">🟣 Condition</span><span class="orange">🟠 Exam tip</span></div>
+<div id="cards" class="grid"></div>
+<div id="noResults" class="no-results">No matching reaction found. Try another keyword.</div>
+</section>
+
+<section id="definitions">
+<div class="section-title"><div><h2>Quick definitions</h2><p>High-frequency terms for revision.</p></div></div>
+<div class="grid">
+<div class="card"><h3>Combination reaction</h3><p class="definition">A reaction in which two or more substances combine to form a single product.</p></div>
+<div class="card"><h3>Decomposition reaction</h3><p class="definition">A reaction in which one compound breaks down into two or more simpler substances.</p></div>
+<div class="card"><h3>Displacement reaction</h3><p class="definition">A more reactive element displaces a less reactive element from its compound.</p></div>
+<div class="card"><h3>Double displacement</h3><p class="definition">Two compounds exchange ions to form two new compounds, often producing a precipitate.</p></div>
+<div class="card"><h3>Oxidation</h3><p class="definition">In Class 10 chemistry, oxidation can be described as addition of oxygen or removal of hydrogen.</p></div>
+<div class="card"><h3>Reduction</h3><p class="definition">In Class 10 chemistry, reduction can be described as removal of oxygen or addition of hydrogen.</p></div>
+</div>
+</section>
+
+
+<section id="core-notes">
+<div class="section-title"><div><h2>Core exam notes 📌</h2><p>Definitions, observations and rules worth memorising.</p></div></div>
+<div class="grid">
+<div class="card"><h3>How to identify reaction type</h3><p><b>Combination:</b> many → one product.<br><b>Decomposition:</b> one → many products.<br><b>Displacement:</b> A + BC → AC + B.<br><b>Double displacement:</b> AB + CD → AD + CB.</p></div>
+<div class="card"><h3>Oxidation & reduction shortcut</h3><p><b>Oxidation:</b> gain of oxygen / loss of hydrogen. <br><b>Reduction:</b> loss of oxygen / gain of hydrogen. <br>When both happen together, the reaction is a <b>redox reaction</b>.</p></div>
+<div class="card"><h3>Important colour memory</h3><p>CuSO₄ → <b>blue</b><br>FeSO₄ → <b>pale green</b><br>Cu → <b>reddish-brown</b><br>CuO → <b>black</b><br>Fe₂O₃ → <b>reddish-brown</b><br>PbI₂ → <b>yellow</b><br>AgCl → <b>white → grey</b></p></div>
+<div class="card"><h3>Gas tests</h3><p><b>CO₂:</b> turns limewater milky.<br><b>H₂:</b> gives a characteristic pop with a flame in a proper laboratory test.<br><b>O₂:</b> supports combustion and relights a glowing splint.</p></div>
+<div class="card"><h3>Conditions matter</h3><p>Write conditions above the reaction arrow: <b>heat, sunlight, catalyst, concentrated H₂SO₄, electrolysis</b>, etc. Missing a required condition can cost marks in equation-based questions.</p></div>
+<div class="card"><h3>State symbols</h3><p><b>(s)</b> solid &nbsp; <b>(l)</b> liquid &nbsp; <b>(g)</b> gas &nbsp; <b>(aq)</b> aqueous solution. A downward arrow <b>↓</b> indicates a precipitate; ↑ indicates gas evolution.</p></div>
+</div>
+</section>
+
+<section id="quiz">
+<div class="section-title"><div><h2>Quick quiz 🧠</h2><p>Test your reaction memory.</p></div></div>
+<div class="quiz-wrap">
+<div id="quizProgress">Question 1 of 5</div>
+<div id="question" class="question"></div>
+<div id="options" class="options"></div>
+<div id="feedback" class="feedback"></div>
+<button id="next" class="btn-primary" style="display:none;margin-top:18px" onclick="nextQuestion()">Next question →</button>
+</div>
+</section>
+</main>
+
+<footer>
+Made for Class 10 Chemistry revision — Core Edition • Use your current NCERT/CBSE material as the final authority for syllabus-specific details.
+</footer>
+
+<script>
+const reactions=[
+{ch:"chemical",title:"Quicklime + Water",eq:"CaO + H₂O → Ca(OH)₂",type:"Combination",colour:"White solid; reaction mixture becomes hot",obs:"Heat is released (exothermic reaction).",cond:"—",tip:"Classic combination + exothermic reaction.",keys:"cao water calcium hydroxide combination exothermic"},
+{ch:"chemical",title:"Calcium Carbonate on Heating",eq:"CaCO₃  —heat→  CaO + CO₂",type:"Decomposition",colour:"White solid",obs:"Gas is evolved.",cond:"Heat",tip:"Thermal decomposition.",keys:"calcium carbonate quicklime carbon dioxide decomposition heat"},
+{ch:"chemical",title:"Lead Nitrate on Heating",eq:"2Pb(NO₃)₂  —heat→  2PbO + 4NO₂ + O₂",type:"Decomposition",colour:"PbO: yellow; NO₂: brown gas",obs:"Brown fumes of nitrogen dioxide are produced.",cond:"Heat",tip:"Important colour-change reaction.",keys:"lead nitrate lead oxide brown fumes nitrogen dioxide oxygen"},
+{ch:"chemical",title:"Silver Chloride in Sunlight",eq:"2AgCl  —sunlight→  2Ag + Cl₂",type:"Photochemical decomposition",colour:"AgCl: white → Ag: grey",obs:"White silver chloride turns grey.",cond:"Sunlight",tip:"Used as an example of photochemical decomposition.",keys:"silver chloride white grey sunlight decomposition"},
+{ch:"chemical",title:"Copper + Oxygen",eq:"2Cu + O₂  —heat→  2CuO",type:"Oxidation",colour:"Cu: reddish-brown; CuO: black",obs:"Copper develops a black coating.",cond:"Heat",tip:"Copper is oxidised to copper(II) oxide.",keys:"copper oxygen copper oxide black oxidation"},
+{ch:"chemical",title:"Copper Oxide + Hydrogen",eq:"CuO + H₂  —heat→  Cu + H₂O",type:"Redox",colour:"CuO: black → Cu: reddish-brown",obs:"Black copper oxide changes to copper.",cond:"Heat",tip:"CuO is reduced while H₂ is oxidised.",keys:"copper oxide hydrogen reduction redox black reddish brown"},
+{ch:"chemical",title:"Iron + Copper Sulphate",eq:"Fe + CuSO₄ → FeSO₄ + Cu",type:"Displacement",colour:"CuSO₄: blue; FeSO₄: pale green; Cu: reddish-brown",obs:"Blue solution becomes pale green and copper is deposited.",cond:"Aqueous solution",tip:"Iron is more reactive than copper.",keys:"iron copper sulphate blue green displacement"},
+{ch:"chemical",title:"Barium Chloride + Sodium Sulphate",eq:"BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl",type:"Double displacement",colour:"BaSO₄: white precipitate",obs:"White precipitate of barium sulphate forms.",cond:"Aqueous solutions",tip:"Precipitation reaction.",keys:"barium chloride sodium sulphate white precipitate double displacement"},
+{ch:"acids",title:"Zinc + Hydrochloric Acid",eq:"Zn + 2HCl → ZnCl₂ + H₂↑",type:"Acid + metal",colour:"Usually colourless solution",obs:"Hydrogen gas is evolved.",cond:"—",tip:"Hydrogen can be tested with a pop sound, under safe lab conditions.",keys:"zinc hydrochloric acid hydrogen gas"},
+{ch:"acids",title:"Sodium Carbonate + HCl",eq:"Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑",type:"Acid + carbonate",colour:"Colourless gas",obs:"Brisk effervescence due to CO₂.",cond:"—",tip:"CO₂ turns limewater milky.",keys:"sodium carbonate hydrochloric acid carbon dioxide effervescence"},
+{ch:"acids",title:"Sodium Hydrogen Carbonate + HCl",eq:"NaHCO₃ + HCl → NaCl + H₂O + CO₂↑",type:"Acid + hydrogen carbonate",colour:"Colourless gas",obs:"Effervescence due to CO₂.",cond:"—",tip:"Common acid-carbonate reaction.",keys:"baking soda sodium hydrogen carbonate hydrochloric acid co2"},
+{ch:"acids",title:"Hydrochloric Acid + Sodium Hydroxide",eq:"HCl + NaOH → NaCl + H₂O",type:"Neutralisation",colour:"No characteristic colour change",obs:"Acid and base form salt and water.",cond:"—",tip:"Neutralisation reaction.",keys:"hydrochloric acid sodium hydroxide neutralisation salt water"},
+{ch:"acids",title:"Copper Oxide + Hydrochloric Acid",eq:"CuO + 2HCl → CuCl₂ + H₂O",type:"Metal oxide + acid",colour:"CuO: black; CuCl₂ solution: blue-green",obs:"Black CuO dissolves and a coloured solution forms.",cond:"—",tip:"Metal oxides generally react with acids.",keys:"copper oxide hydrochloric acid copper chloride black blue green"},
+{ch:"acids",title:"Baking Soda on Heating",eq:"2NaHCO₃  —heat→  Na₂CO₃ + H₂O + CO₂",type:"Thermal decomposition",colour:"White solid",obs:"CO₂ is released.",cond:"Heat",tip:"NaHCO₃ is baking soda.",keys:"baking soda heating sodium carbonate carbon dioxide"},
+{ch:"acids",title:"Bleaching Powder Preparation",eq:"Ca(OH)₂ + Cl₂ → CaOCl₂ + H₂O",type:"Preparation of salt",colour:"Bleaching powder: pale yellowish/white solid",obs:"Chlorine reacts with dry slaked lime.",cond:"Dry slaked lime",tip:"CaOCl₂ is bleaching powder.",keys:"bleaching powder calcium hydroxide chlorine slaked lime"},
+{ch:"acids",title:"Plaster of Paris + Water",eq:"CaSO₄·½H₂O + 1½H₂O → CaSO₄·2H₂O",type:"Hydration",colour:"White solid",obs:"POP sets into gypsum.",cond:"Water",tip:"Used for casts and moulds.",keys:"plaster paris gypsum hydration calcium sulphate"},
+{ch:"metals",title:"Magnesium + Oxygen",eq:"2Mg + O₂  —heat→  2MgO",type:"Combination / oxidation",colour:"Mg: silvery; MgO: white",obs:"Magnesium burns with a dazzling white flame.",cond:"Heat",tip:"Clean magnesium ribbon before burning.",keys:"magnesium oxygen white flame magnesium oxide"},
+{ch:"metals",title:"Sodium + Water",eq:"2Na + 2H₂O → 2NaOH + H₂↑",type:"Displacement",colour:"NaOH solution: colourless",obs:"Hydrogen gas evolves and a lot of heat is released.",cond:"Water",tip:"Very reactive metal; demonstrated only with proper laboratory precautions.",keys:"sodium water sodium hydroxide hydrogen"},
+{ch:"metals",title:"Iron + Copper Sulphate",eq:"Fe + CuSO₄ → FeSO₄ + Cu",type:"Displacement",colour:"Blue → pale green; copper reddish-brown",obs:"Copper is deposited on iron.",cond:"Aqueous solution",tip:"Useful for comparing metal reactivity.",keys:"iron copper sulphate displacement blue green copper"},
+{ch:"metals",title:"Thermite Reaction",eq:"Fe₂O₃ + 2Al → Al₂O₃ + 2Fe + heat",type:"Displacement / redox",colour:"Iron(III) oxide: reddish-brown",obs:"A large amount of heat is released and iron is produced.",cond:"Ignition",tip:"Used in welding railway tracks; industrial reaction.",keys:"thermite iron oxide aluminium iron redox"},
+{ch:"metals",title:"Metal + Oxygen: General",eq:"Metal + O₂ → Metal oxide",type:"Oxidation",colour:"Varies by oxide",obs:"Metal combines with oxygen.",cond:"Often heat",tip:"Metal oxides are generally basic, with important exceptions.",keys:"metal oxygen oxide oxidation"},
+{ch:"carbon",title:"Methane Combustion",eq:"CH₄ + 2O₂ → CO₂ + 2H₂O + heat",type:"Combustion",colour:"Flame colour depends on conditions",obs:"Heat and light are released.",cond:"Ignition",tip:"Complete combustion of methane.",keys:"methane oxygen combustion carbon dioxide water"},
+{ch:"carbon",title:"Ethanol Oxidation",eq:"CH₃CH₂OH + 2[O] → CH₃COOH + H₂O",type:"Oxidation",colour:"Products are generally colourless",obs:"Ethanol is oxidised to ethanoic acid.",cond:"Oxidising agent",tip:"Acidified KMnO₄ or alkaline KMnO₄ can act as oxidising agents.",keys:"ethanol oxidation ethanoic acid acetic acid"},
+{ch:"carbon",title:"Ethanol + Sodium",eq:"2C₂H₅OH + 2Na → 2C₂H₅ONa + H₂↑",type:"Reaction with sodium",colour:"Usually colourless",obs:"Hydrogen gas is evolved.",cond:"—",tip:"Shows weak acidic character of ethanol.",keys:"ethanol sodium hydrogen sodium ethoxide"},
+{ch:"carbon",title:"Esterification",eq:"CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O",type:"Esterification",colour:"Ester is colourless; characteristic fruity smell",obs:"Ethyl ethanoate is formed.",cond:"Conc. H₂SO₄, heat",tip:"Carboxylic acid + alcohol → ester + water.",keys:"ethanoic acid ethanol esterification ethyl ethanoate fruity smell"},
+{ch:"carbon",title:"Saponification",eq:"Ester + NaOH → Sodium salt of acid + Alcohol",type:"Saponification",colour:"Soap is usually solid/semisolid",obs:"Ester hydrolysis in alkaline medium produces soap and alcohol.",cond:"NaOH, heat",tip:"Important in soap manufacture.",keys:"saponification ester sodium hydroxide soap alcohol"},
+{ch:"carbon",title:"Ethanoic Acid + Sodium Carbonate",eq:"2CH₃COOH + Na₂CO₃ → 2CH₃COONa + H₂O + CO₂↑",type:"Acid + carbonate",colour:"Colourless gas",obs:"Effervescence due to CO₂.",cond:"—",tip:"Ethanoic acid shows acidic properties.",keys:"ethanoic acid sodium carbonate carbon dioxide vinegar"},
+{ch:"chemical",title:"Magnesium + Hydrochloric Acid",eq:"Mg + 2HCl → MgCl₂ + H₂↑",type:"Displacement",colour:"Colourless solution",obs:"Hydrogen gas is evolved.",cond:"—",tip:"Reactive metal + acid.",keys:"magnesium hydrochloric acid hydrogen"},
+{ch:"chemical",title:"Potassium Iodide + Lead Nitrate",eq:"2KI + Pb(NO₃)₂ → PbI₂↓ + 2KNO₃",type:"Double displacement",colour:"PbI₂: bright yellow precipitate",obs:"A yellow precipitate forms.",cond:"Aqueous solutions",tip:"Classic precipitation reaction.",keys:"potassium iodide lead nitrate lead iodide yellow precipitate"},
+{ch:"chemical",title:"Ferrous Sulphate on Heating",eq:"2FeSO₄  —heat→  Fe₂O₃ + SO₂ + SO₃",type:"Thermal decomposition",colour:"FeSO₄: pale green; Fe₂O₃: brown solid",obs:"Pale green ferrous sulphate changes on heating and gases are evolved.",cond:"Heat",tip:"The gases have a characteristic pungent smell; do not inhale.",keys:"ferrous sulphate heating iron oxide sulphur dioxide sulphur trioxide"},
+{ch:"chemical",title:"Respiration",eq:"C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + energy",type:"Oxidation",colour:"No characteristic colour change",obs:"Energy is released.",cond:"Enzymatic biological process",tip:"An important example of an exothermic oxidation process.",keys:"respiration glucose oxygen carbon dioxide energy oxidation"},
+{ch:"acids",title:"Chlor-Alkali Process",eq:"2NaCl + 2H₂O → 2NaOH + Cl₂ + H₂",type:"Electrolysis",colour:"Chlorine: greenish-yellow gas",obs:"Sodium hydroxide, chlorine and hydrogen are produced.",cond:"Electrolysis of brine",tip:"A major industrial process.",keys:"chlor alkali brine sodium hydroxide chlorine hydrogen electrolysis"},
+{ch:"acids",title:"Chlorine + Slaked Lime",eq:"Cl₂ + Ca(OH)₂ → CaOCl₂ + H₂O",type:"Preparation",colour:"Bleaching powder: pale yellowish-white",obs:"Bleaching powder is formed.",cond:"Dry slaked lime",tip:"Know the formula CaOCl₂.",keys:"chlorine slaked lime bleaching powder"},
+{ch:"acids",title:"Gypsum to Plaster of Paris",eq:"CaSO₄·2H₂O  —373 K→  CaSO₄·½H₂O + 1½H₂O",type:"Thermal decomposition",colour:"White solid",obs:"Water of crystallisation is partially removed.",cond:"Heating around 373 K",tip:"Controlled heating gives POP.",keys:"gypsum plaster paris 373 K water crystallisation"},
+{ch:"acids",title:"Washing Soda from Sodium Carbonate",eq:"Na₂CO₃ + 10H₂O → Na₂CO₃·10H₂O",type:"Crystallisation",colour:"White crystals",obs:"Crystals of washing soda form.",cond:"Water / crystallisation",tip:"Na₂CO₃·10H₂O is washing soda.",keys:"washing soda sodium carbonate water crystallisation"},
+{ch:"metals",title:"Aluminium + Oxygen",eq:"4Al + 3O₂ → 2Al₂O₃",type:"Oxidation",colour:"Al₂O₃: white solid",obs:"A protective oxide layer forms on aluminium.",cond:"Oxygen",tip:"This oxide layer helps prevent further corrosion.",keys:"aluminium oxygen aluminium oxide protective layer"},
+{ch:"metals",title:"Zinc + Sodium Hydroxide",eq:"Zn + 2NaOH → Na₂ZnO₂ + H₂↑",type:"Reaction with base",colour:"Colourless solution",obs:"Hydrogen gas is evolved.",cond:"Strong base",tip:"Zinc is amphoteric and reacts with strong bases.",keys:"zinc sodium hydroxide sodium zincate hydrogen amphoteric"},
+{ch:"metals",title:"Roasting of Zinc Sulphide",eq:"2ZnS + 3O₂ → 2ZnO + 2SO₂",type:"Roasting",colour:"ZnO: yellow when hot, white when cold",obs:"Zinc sulphide is converted to zinc oxide.",cond:"Excess air / heating",tip:"Important extraction step for sulphide ores.",keys:"zinc sulphide roasting zinc oxide sulphur dioxide"},
+{ch:"metals",title:"Calcination of Zinc Carbonate",eq:"ZnCO₃  —heat→  ZnO + CO₂",type:"Calcination",colour:"ZnO: yellow when hot, white when cold",obs:"Carbon dioxide is released.",cond:"Heating in limited/no air",tip:"Carbonate ore → metal oxide + CO₂.",keys:"zinc carbonate calcination zinc oxide carbon dioxide"},
+{ch:"metals",title:"Reduction of Zinc Oxide",eq:"ZnO + C  —heat→  Zn + CO",type:"Reduction",colour:"ZnO: yellow when hot/white when cold",obs:"Zinc is obtained from zinc oxide.",cond:"High temperature",tip:"Carbon acts as a reducing agent.",keys:"zinc oxide carbon reduction zinc extraction"},
+{ch:"metals",title:"Copper from Copper(I) Oxide",eq:"2Cu₂O + Cu₂S → 6Cu + SO₂",type:"Reduction",colour:"Copper: reddish-brown",obs:"Copper is produced.",cond:"Heating",tip:"An extraction/refining-related reaction.",keys:"copper oxide copper sulphide copper extraction"},
+{ch:"metals",title:"Corrosion of Iron",eq:"Iron + O₂ + H₂O → hydrated iron(III) oxide (rust)",type:"Corrosion",colour:"Rust: reddish-brown",obs:"A reddish-brown coating develops over time.",cond:"Moist air",tip:"Water and oxygen are essential factors for rusting.",keys:"rust corrosion iron oxygen water reddish brown"},
+{ch:"carbon",title:"Ethene Hydrogenation",eq:"CH₂=CH₂ + H₂  —Ni→  CH₃–CH₃",type:"Addition",colour:"Colourless compounds",obs:"Hydrogen adds across the double bond.",cond:"Nickel catalyst",tip:"Unsaturated hydrocarbon becomes saturated.",keys:"ethene hydrogen nickel addition ethane"},
+{ch:"carbon",title:"Ethyne Hydrogenation",eq:"CH≡CH + 2H₂  —Ni→  CH₃–CH₃",type:"Addition",colour:"Colourless compounds",obs:"Hydrogen adds across multiple bonds.",cond:"Nickel catalyst",tip:"Illustrates addition of hydrogen to an unsaturated hydrocarbon.",keys:"ethyne hydrogen nickel ethane addition"},
+{ch:"carbon",title:"Ethanol Dehydration",eq:"C₂H₅OH  —conc. H₂SO₄, 443 K→  C₂H₄ + H₂O",type:"Dehydration",colour:"Colourless products",obs:"Water is removed from ethanol and ethene forms.",cond:"Conc. H₂SO₄, 443 K",tip:"Alcohol → alkene + water.",keys:"ethanol dehydration ethene sulphuric acid 443 K"},
+{ch:"carbon",title:"Ethanoic Acid + Sodium Hydroxide",eq:"CH₃COOH + NaOH → CH₃COONa + H₂O",type:"Neutralisation",colour:"Colourless solution",obs:"Sodium ethanoate and water form.",cond:"—",tip:"Ethanoic acid is a weak acid.",keys:"ethanoic acid sodium hydroxide sodium ethanoate neutralisation"},
+{ch:"carbon",title:"Ethanoic Acid + Sodium Hydrogen Carbonate",eq:"CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑",type:"Acid + hydrogen carbonate",colour:"Colourless gas",obs:"Brisk effervescence due to CO₂.",cond:"—",tip:"Useful test for a carboxylic acid.",keys:"ethanoic acid baking soda carbon dioxide"}
+];
+
+let active="all", query="";
+const cards=document.getElementById("cards"), count=document.getElementById("count"), noResults=document.getElementById("noResults");
+
+function render(){
+ const filtered=reactions.filter(r=>(active==="all"||r.ch===active)&&((r.title+" "+r.eq+" "+r.type+" "+r.colour+" "+r.obs+" "+r.tip+" "+r.keys).toLowerCase().includes(query.toLowerCase())));
+ count.textContent=`Showing ${filtered.length} of ${reactions.length} reactions`;
+ cards.innerHTML=filtered.map(r=>`
+ <article class="card">
+  <div class="top"><h3>${r.title}</h3><span class="tag">${r.type}</span></div>
+  <div class="equation">${r.eq}</div>
+  <div class="meta">
+   <div><b>🎨 Colour</b><span>${r.colour}</span></div>
+   <div><b>👀 Observation</b><span>${r.obs}</span></div>
+   <div><b>🟣 Condition</b><span>${r.cond}</span></div>
+   <div><b>🟠 Exam tip</b><span>${r.tip}</span></div>
+  </div>
+ </article>`).join("");
+ noResults.style.display=filtered.length?"none":"block";
+}
+render();
+
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value;render()});
+document.querySelectorAll("[data-filter]").forEach(btn=>btn.addEventListener("click",()=>{
+ active=btn.dataset.filter;
+ document.querySelectorAll("[data-filter]").forEach(b=>b.classList.remove("active"));btn.classList.add("active");
+ if(active==="quiz"){document.getElementById("quiz").scrollIntoView();return}
+ render();document.getElementById("reactions").scrollIntoView();
+}));
+document.querySelectorAll("[data-jump]").forEach(c=>c.addEventListener("click",()=>{
+ active=c.dataset.jump; document.querySelectorAll("[data-filter]").forEach(b=>{b.classList.toggle("active",b.dataset.filter===active)});render();document.getElementById("reactions").scrollIntoView();
+}));
+
+const quiz=[
+["Which colour is copper(II) sulphate solution?","Blue",["Blue","Pale green","Yellow","Black"]],
+["What is the precipitate in BaCl₂ + Na₂SO₄?","Barium sulphate",["Sodium chloride","Barium sulphate","Barium oxide","Sodium sulphate"]],
+["What happens to AgCl in sunlight?","It turns grey","It turns blue","It dissolves","It becomes green"],
+["Which reaction produces ethyl ethanoate?","Esterification",["Neutralisation","Esterification","Displacement","Decomposition"]],
+["What is the colour of CuO?","Black",["White","Black","Blue","Green"]]
+];
+let qi=0;
+function loadQuestion(){
+ const [q,a,opts]=quiz[qi];
+ document.getElementById("quizProgress").textContent=`Question ${qi+1} of ${quiz.length}`;
+ document.getElementById("question").textContent=q;
+ document.getElementById("feedback").textContent="";
+ document.getElementById("next").style.display="none";
+ document.getElementById("options").innerHTML=opts.map(o=>`<button onclick="answer(this,'${o.replaceAll("'","\\'")}','${a.replaceAll("'","\\'")}')">${o}</button>`).join("");
+}
+function answer(btn,choice,correct){
+ document.querySelectorAll("#options button").forEach(b=>b.disabled=true);
+ if(choice===correct){btn.classList.add("correct");document.getElementById("feedback").textContent="✅ Correct!";}
+ else{btn.classList.add("wrong");document.getElementById("feedback").textContent=`❌ Correct answer: ${correct}`;document.querySelectorAll("#options button").forEach(b=>{if(b.textContent===correct)b.classList.add("correct")});}
+ document.getElementById("next").style.display="inline-block";
+}
+function nextQuestion(){qi=(qi+1)%quiz.length;loadQuestion()}
+loadQuestion();
+</script>
+</body>
+</html>
